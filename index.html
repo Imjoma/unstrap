@@ -13,8 +13,8 @@
 
 
  <!--     add a responsive nav -->
- <div class="root container-lg">
-     <nav class="nav navbar navbar-expand-lg navbar-light py-4">
+ <div class="root">
+     <nav class="container-lg nav navbar navbar-expand-lg navbar-light py-4">
         <div class="container-fluid">
           <a class="logo navbar-brand" href="#"><span class="span-style">BootStrap</span></a>
           <!--data-target must be the same as id in collapse -->
@@ -30,8 +30,8 @@
       </nav>
 
         <!-- full vh header-->
-        <section>
-            <div class="container-fluid">
+        <section class="">
+            <div class="container-lg">
                 <div class="row justify-content-between">
                     <!-- children of the flex -->
                     <div class="col-md-6 text-center text-md-start">
@@ -55,13 +55,13 @@
             </div>
         </section>
 
-        <section class="bg-light" id="services">
-            <div>
-                <div class="text-center">
-                    <h6>Pricing Plans</h6>
+        <section class="container-fluid bg-light" id="services">
+
+                <div class="text-center pb-4">
+                    <h4>Pricing Plans</h4>
                     <p class="lead text-muted">Choose a price that suits you.</p>
                 </div>
-                <div class="row justify-content-center align-items-center g-3">
+                <div class="container-xl mx-auto row justify-content-center align-items-center g-3">
                     <!-- card 1 -->
                     <div class="col-8 col-lg-4 col-xl-3">
                         <div class="card border-0 shadow bg-body rounded">
@@ -119,12 +119,59 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 
 
     <!-- accordion -->
+    <section>
+        <div class="container-md">
+            <div class="text-center pb-4">
+                <h4>FAQ's</h4>
+                <p class="lead text-muted">Our beloved community</p>
+            </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!-- accordion-item-1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-1" aria-expanded="false" aria-controls="flush-1">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-1" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatibus ex incidunt, cum nulla rem et molestiae facere amet totam.</div>
+                </div>
+            </div>
+            <!-- accordion-item-2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-2" aria-expanded="true" aria-controls="flush-2">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatibus ex incidunt, cum nulla rem et molestiae facere amet totam.</div>
+                </div>
+            </div>
+            <!-- accordion-item-3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-3" aria-expanded="false" aria-controls="flush-3">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quibusdam sed assumenda nisi sit ut delectus necessitatibus explicabo vitae optio!</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+    
+
 
         <section class="col">
             <div class="col-12 bg-primary">hello</div>
