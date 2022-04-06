@@ -1,6 +1,6 @@
 
 const navLinksContainer = document.querySelector('.navbar-nav')
-const arrOfNavLinks = ['about', 'services','portfolio', 'team','blog', 'contact','get started']
+const arrOfNavLinks = ['about', 'pricing', 'FAQ','reviews', 'contact','get started']
 
 const navLinksTemplate = arrOfNavLinks
     .map((navlinks) => {
@@ -13,12 +13,14 @@ const navLinksTemplate = arrOfNavLinks
     .join('')
     navLinksContainer.innerHTML = navLinksTemplate
 
-
 const navLinks = document.querySelectorAll('.navbar-nav a')
 navLinks.forEach(link => {
     // dyanmically change when click to a link
     if(link.textContent == 'about'){
         link.setAttribute("aria-current", "page");
+        link.setAttribute("data-bs-toggle", "offcanvas");
+        link.setAttribute("data-bs-target", "#offcanvasRight");
+        link.setAttribute("aria-controls", "offcanvasRight");
     }
     link.style.textTransform = 'capitalize'
     link.style.fontWeight = '600'
