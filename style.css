@@ -9,7 +9,8 @@ html{
     font-family: 'Poppins';
 }
 
-section{
+section,
+footer{
     padding: 3rem 0;
 }
 
@@ -22,8 +23,11 @@ body{
     font-size: 1.8rem;
 }
 
+
 .nav-item{
     padding: 0 .5rem;
+    text-transform: capitalize;
+    font-weight: 600;
 }
 
 .heading{
@@ -32,6 +36,12 @@ body{
 
 .logo{
     font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+footer{
+    list-style: none;
 }
 /* 
 .img{
